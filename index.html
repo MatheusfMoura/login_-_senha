@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+
+    <script LANGUAGE=JavaScript>
+        function Login(){
+        var done=0;
+        var username=document.login.username.value;
+        username=username.toLowerCase();
+        var password=document.login.password.value;
+        password=password.toLowerCase();
+        if (username=="admin" && password=="qwe123") {
+        window.location="http://127.0.0.1:5500/React%20Native/Projetos/Tela_de_Login_Paineis_BelloAlimentos_Bi/Repositorio_Paineis_BelloAlimentos/templates/index.html"; done=1;
+        }
+        if (done==0) { alert("Dados incorretos, tente novamente"); }
+        }
+    </script>
+
+</head>
+<body>
+
+    <form method="post" class="form" name=login>
+
+        <div class="login-box">
+            <h2>Login</h2>
+            
+              <div class="user-box">
+                <input type="text" name="username" required="">
+                <label>Username</label>
+              </div>
+              <div class="user-box">
+                <input type="password" name="password" required="">
+                <label>Password</label>
+              </div>
+              <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                
+              </a>
+            
+            <div id="botao">
+                <button type="button" value="Entrar" onclick=Login()>ACESSAR</button>
+            </div>
+
+          </div>
+    </form>
+      
+</body>
+</html>
+
